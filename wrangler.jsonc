@@ -1,0 +1,10 @@
+// Cloudflare Workers config: serves the Flutter web build as static files.
+// Build first with `flutter build web --release`, then `npx wrangler deploy`.
+{
+  "name": "invoicemaker",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./build/web",
+    "not_found_handling": "single-page-application"
+  }
+}
